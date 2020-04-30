@@ -17,6 +17,9 @@ class ListView(itemview: View): RecyclerView.ViewHolder(itemview){
         itemView.setOnClickListener{
             activity.onClick(user.idnomer)
         }
+        itemView.nast.setOnClickListener {
+            activity.onOpButClick(itemView.nast, user.idnomer)
+        }
     }
 
 }
